@@ -1,0 +1,23 @@
+{
+  "name": "ailahealth-lab-data-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noortor/AilaHealth-Lab-Data-Converter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noortor/AilaHealth-Lab-Data-Converter/issues"
+  },
+  "homepage": "https://github.com/noortor/AilaHealth-Lab-Data-Converter#readme",
+  "dependencies": {
+    "tabula-js": "^1.0.1",
+    "yargs": "^16.1.1"
+  }
+}
