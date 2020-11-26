@@ -2,8 +2,10 @@ const fs = require('fs');
 const tabula = require('tabula-js');
 const yargs = require('yargs');
 
+//add more labs
 const validLabs = ["EN", "UL"];
 
+//used for command line interaction
 yargs.command({
     command: 'convert',
     describe: 'Convert a pdf of lab data into a json',
@@ -20,6 +22,7 @@ yargs.command({
 })
 
 yargs.parse();
+
 
 function main(fileName) {
     const t = tabula('./labDataInputs/' + fileName);
@@ -43,7 +46,6 @@ function main(fileName) {
         }
         const labDataStringified = JSON.stringify(labData);
         fs.writeFileSync('./labDataOutputs/' + fileName.substring(0, fileName.length - 4) + '.json', labDataStringified);
-        console.log(labData);
     })
 
 }
